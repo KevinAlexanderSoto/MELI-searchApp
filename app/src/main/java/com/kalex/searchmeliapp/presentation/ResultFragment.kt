@@ -19,7 +19,7 @@ import com.kalex.searchmeliapp.presentation.placeholder.PlaceholderContent
  */
 class ResultFragment : Fragment() {
 
-    private var columnCount: String = " "
+    private var searchQuery: String = " "
 
 
     private var _resultBinding: FragmentResultBinding? = null
@@ -36,10 +36,10 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
-            columnCount = it.getString("searchQuery","defaultValue")
+            searchQuery = it.getString("searchQuery","defaultValue")
         }
 
-        Toast.makeText(this.context, "argument: $columnCount", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this.context, "argument: $searchQuery", Toast.LENGTH_SHORT).show()
 
     }
 

@@ -56,6 +56,9 @@ dependencies {
 
     // Retrofit
     implementation(libs.retrofit)
+    //Gson converter
+    implementation (libs.gson)
+    implementation (libs.converter.gson)
 
     // Coroutines
     implementation(libs.kotlinx.coroutines.core)
